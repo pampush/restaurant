@@ -1,0 +1,85 @@
+$base-font-size: 10px
+$base-font-size-rem: 1rem
+$base-color: #c6bfff
+$base-cell-font-size: 15rem
+$gameboard-cell-width: 20rem
+$gameboard-cell-height: 20rem
+$gameboard-size: 3
+    
+html
+  font-size: $base-font-size
+  box-sizing: border-box
+  font-family: 'Roboto', sans-serif
+
+*, *:before, *:after
+  box-sizing: inherit
+
+.container
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: $base-font-size-rem * 10 1fr $base-font-size-rem * 10
+    min-height: 100vh
+
+.header-main
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    grid-column: span 12
+    background: #f0c8c8
+    padding: 0 $base-font-size-rem * 2 0 $base-font-size-rem * 2
+    
+    &__bottom
+        display: flex
+    &__bottom-button
+        position: relative
+        padding: $base-font-size-rem
+        font-size: $base-font-size-rem * 3
+        font-weight: bold
+        background: transparent
+        border: 0
+        //transition-duration: .5s
+        &:last-child
+            margin-left: auto
+        
+        &:hover
+            //transform: translateY(- $base-font-size-rem)
+            &::after
+                content: ''
+                position: absolute
+                width: 100%
+                height: $base-font-size-rem / 4
+                background: #000
+                left: 0
+                bottom: 0
+                @extend %underline-animation
+
+        &:focus
+            outline: none    
+main
+    display: grid
+    grid-column: span 12
+    grid-template-columns: repeat(3, 1fr)
+    background: #a5d884
+
+.main-item
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: $base-font-size-rem * 5
+
+    &__card
+        height: $base-font-size-rem * 30
+        width: $base-font-size-rem * 24
+        background: #cbbfff 
+
+footer
+    grid-column: span 12
+    background: #e8bbf3
+
+%underline-animation
+    animation: .3s linear 0s alternate move_line
+    @keyframes move_line 
+        0%
+            width: 10% 
+        100% 
+            width: 100%
