@@ -25,7 +25,6 @@ html
     flex-direction: column
     justify-content: space-between
     grid-column: span 12
-    background: #f0c8c8
     padding: 0 $base-font-size-rem * 2 0 $base-font-size-rem * 2
     
     &__bottom
@@ -37,6 +36,7 @@ html
         font-weight: bold
         background: transparent
         border: 0
+        cursor: pointer
         //transition-duration: .5s
         &:last-child
             margin-left: auto
@@ -54,12 +54,15 @@ html
                 @extend %underline-animation
 
         &:focus
-            outline: none    
+            outline: none 
+
+.content-main
+    grid-column: span 12
+
 main
     display: grid
     grid-column: span 12
     grid-template-columns: repeat(3, 1fr)
-    background: #a5d884
 
 .main-item
     display: flex
@@ -70,9 +73,25 @@ main
     &__card
         height: $base-font-size-rem * 30
         width: $base-font-size-rem * 24
-        background: #cbbfff 
+        &-pic
+            height: $base-font-size-rem * 20
+            width: inherit
+        &-header
+            font-size: $base-font-size-rem * 3
+            font-weight: bold
+        &-desc
+            font-size: $base-font-size-rem * 2
+             
 
-footer
+.home-container
+    width: 50%
+    padding: 0 $base-font-size-rem * 3 0 $base-font-size-rem * 3
+    &__header
+        font-size: $base-font-size-rem * 2.5
+    &__p
+        font-size: $base-font-size-rem * 2
+
+.footer-container
     grid-column: span 12
     background: #e8bbf3
 
@@ -83,3 +102,15 @@ footer
             width: 10% 
         100% 
             width: 100%
+
+
+.map-container
+    display: flex
+    align-items: center
+    height: 100%
+    padding: 0 $base-font-size-rem * 3 0 $base-font-size-rem * 3
+
+#map
+    height: $base-font-size-rem * 60
+    width: $base-font-size-rem * 60
+

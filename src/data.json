@@ -1,0 +1,58 @@
+{
+    "header": ["Home", "Menu", "Delivery", "Contact"],
+    "content": [
+        {
+            "name": "cappuccino",
+            "price": "2$",
+            "pic": "./static/img/cappuccino.png"
+        },
+        {
+            "name": "mocha",
+            "price": "2.5$",
+            "pic": "./static/img/mocha.png"
+        },
+        {
+            "name": "marochino",
+            "price": "2$",
+            "pic": "./static/img/marochino.png"
+        },
+        {
+            "name": "rafcoffe",
+            "price": "2$",
+            "pic": "./static/img/rafcoffe.png"
+        },
+        {
+            "name": "lattemacchiato",
+            "price": "2$",
+            "pic": "./static/img/lattemacchiato.png"
+        },
+        {
+            "name": "latte",
+            "price": "2$",
+            "pic": "./static/img/latte.png"
+        },
+        {
+            "name": "flatwhite",
+            "price": "2$",
+            "pic": "./static/img/flatwhite.png"
+        },
+        {
+            "name": "breve",
+            "price": "2$",
+            "pic": "./static/img/breve.png"
+        }
+        
+    ],
+
+    "footer": [],
+
+    "home": {
+        "header": "About us",
+        "description": [{
+            "p": "Black, single origin, turkish affogato, instant macchiato galão grinder aged. Milk sit cream, grinder aged eu roast grounds. Est robust robusta, aromatic percolator roast, mug, coffee steamed irish aroma crema. Cortado decaffeinated cup strong, ut foam carajillo saucer ut café au lait foam skinny. Extra  froth irish, id java flavour filter mocha macchiato aftertaste medium."
+        },
+        {
+            "p": "Kopi-luwak, bar  java pumpkin spice medium crema bar  caramelization grinder extraction rich. So eu java crema barista id ristretto id pumpkin spice cinnamon variety crema. That, steamed sweet cortado, dark turkish strong spoon aromatic dark viennese cinnamon. Cinnamon, id beans frappuccino beans white barista roast variety affogato organic. Qui as crema mocha cultivar grounds irish doppio."
+        }]
+    }
+}
